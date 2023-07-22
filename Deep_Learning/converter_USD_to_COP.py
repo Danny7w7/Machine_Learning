@@ -11,7 +11,7 @@ pesos = np.array([], dtype=float)
 for i in range(1, 1001):
     numero_aleatorio = np.random.rand()
     numero_aleatorio_esc = 1 + numero_aleatorio * 999
-    numero_aleatorio_esc = round(numero_aleatorio_esc, 3)
+    numero_aleatorio_esc = round(numero_aleatorio_esc, 2)
     dolares = np.append(dolares, numero_aleatorio_esc)
 
     pesos = np.append(pesos, dolares[i-1] * 3963.75)
